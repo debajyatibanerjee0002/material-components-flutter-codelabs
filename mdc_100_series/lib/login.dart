@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'supplemental/cut_corners_border.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -94,8 +95,11 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   child: Text('cancel'),
                 ),
-                MaterialButton(
-                  elevation: 4,
+                RaisedButton(
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  ),
+                  elevation: 8,
                   onPressed: () {
                     Navigator.pop(context);
                   },
