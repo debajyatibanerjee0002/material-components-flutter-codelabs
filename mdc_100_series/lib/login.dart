@@ -29,7 +29,6 @@ class _LoginPageState extends State<LoginPage> {
     _usernameController.clear();
   }
 
-  // TODO: Add text editing controllers (101)
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +46,6 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             SizedBox(height: 120.0),
-            // TODO: Wrap Username with AccentColorOverride (103)
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
@@ -65,8 +63,6 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 20,
             ),
-            // TODO: Remove filled: true values (103)
-            // TODO: Wrap Password with AccentColorOverride (103)
             TextField(
               controller: _passwordController,
               obscureText: true,
@@ -85,7 +81,6 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 10,
             ),
-            // TODO: Add TextField widgets (101)
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -111,12 +106,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ],
             ),
-            // TODO: Add button bar (101)
           ],
         ),
       ),
     );
   }
 }
-
-// TODO: Add AccentColorOverride (103)
